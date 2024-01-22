@@ -223,8 +223,8 @@ def tv_loss(input):
     y_diff = input[..., 1:, :-1] - input[..., :-1, :-1]
     return (x_diff**2 + y_diff**2).mean([1, 2, 3])
 
-# device = torch.device('cuda:0' if (torch.cuda.is_available() and not args.cpu) else 'cpu')
-device = 'mps'
+device = torch.device('cuda:0' if (torch.cuda.is_available() and not args.cpu) else 'cpu')
+# device = 'mps'
 print('Using device:', device)
 
 model_state_dict = torch.load(args.model_path, map_location='cpu')
