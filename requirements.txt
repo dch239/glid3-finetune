@@ -103,5 +103,5 @@ wcwidth==0.2.13
 webdataset==0.2.86
 Werkzeug==3.0.1
 yarl==1.9.4
-youtokentome==1.0.1
+youtokentome
 zipp==3.17.0
